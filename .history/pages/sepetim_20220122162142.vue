@@ -186,7 +186,7 @@
                       value="update_qty"
                       title="Güncelle"
                       class="button btn-update"
-                      @click="urunartibir(sepet)"
+                      @click="adetartibir(sepet)"
                     >
                       <span><span>+1</span></span>
                     </button>
@@ -333,14 +333,13 @@ data() {
      }
   },
 mounted() {
- 
   firebase.auth().onAuthStateChanged((user) => {
       console.log(user)
-      this.user = user
+      this.ser = user
     })
 
     fbDb
-      .ref('Sepet/'+this.user.uid)
+      .ref('Sepet/8Mt43rDDxdZHhN0ufZbxM8Z1rrb2')
       .get()
       .then((snapshot) => {
         if (snapshot.exists()) {
@@ -360,19 +359,12 @@ mounted() {
 },
 methods:{
   sepettenCikar(sepet){
-   const spt=this.Seppet
-   const productIndex=spt.findIndex(item =>item.code===sepet.code)
-    spt[productIndex].adet-=1
-    if(spt[productIndex].adet<1){
-    spt.splice(productIndex,1);}
-    fbDb.ref('Sepet/'+ this.user.uid).set(spt)
-  },
-  urunartibir(sepet){
-   const spt=this.Seppet
-   const productIndex=spt.findIndex(item =>item.code===sepet.code)
-    spt[productIndex].adet+=1
-    
-    fbDb.ref('Sepet/'+ this.user.uid).set(spt)
+   const spt=this.
+   const productIndex=this.Seppet.findIndex(item =>item.code===sepet.code)
+    this.Seppet[productIndex].fiyat-=1
+    if(this.Seppet[productIndex].fiyat<1){
+    this.Seppet.splice(productIndex,1);}
+    fbDb.ref('Sepet/'+ this.user.uid).set(this.Seppet)
   }
 }
 }

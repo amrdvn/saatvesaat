@@ -1,11 +1,9 @@
 <template>
-  <div class="main-container col1-layout" >
+  <div class="main-container col1-layout">
     <div class="main">
       <div class="col-main">
         <div></div>
-        <my v-for="product in products"
-      :key="product.code"
-      :product="product"></my>
+
         <div class="cart display-single-price">
           <div class="page-title title-buttons">
             <h1>Alışveriş Sepeti</h1>
@@ -15,7 +13,7 @@
                   type="button"
                   title="ALIŞVERİŞİ TAMAMLA"
                   class="button btn-proceed-checkout btn-checkout"
-                  onclick="window.location='';"
+                  onclick="window.location='https://www.saatvesaat.com.tr/checkout/onepage/';"
                 >
                   <span><span>ALIŞVERİŞİ TAMAMLA</span></span>
                 </button>
@@ -23,7 +21,7 @@
             </ul>
           </div>
           <form
-            action=""
+            action="https://www.saatvesaat.com.tr/checkout/cart/updatePost/"
             method="post"
           >
             <input name="form_key" type="hidden" value="mcfk20DjntxOZL8N" />
@@ -73,7 +71,7 @@
                         type="button"
                         title="Alışverişe Devam"
                         class="button2 btn-continue"
-                        onclick="setLocation('')"
+                        onclick="setLocation('https://www.saatvesaat.com.tr/')"
                       >
                         <span><span>Alışverişe Devam</span></span>
                       </button>
@@ -116,13 +114,48 @@
                       </button>
                     </div>
 
+                    <!--[if lt IE 8]>
+                      <input
+                        type="hidden"
+                        id="update_cart_action_container"
+                        data-cart-item-update
+                      />
+                      <script type="text/javascript">
+                        //<![CDATA[
+                        Event.observe(window, 'load', function () {
+                          // Internet Explorer (lt 8) does not support value attribute in button elements
+                          $emptyCartButton = $('empty_cart_button')
+                          $cartActionContainer = $(
+                            'update_cart_action_container'
+                          )
+                          if ($emptyCartButton && $cartActionContainer) {
+                            Event.observe(
+                              $emptyCartButton,
+                              'click',
+                              function () {
+                                $emptyCartButton.setAttribute(
+                                  'name',
+                                  'update_cart_action_temp'
+                                )
+                                $cartActionContainer.setAttribute(
+                                  'name',
+                                  'update_cart_action'
+                                )
+                                $cartActionContainer.setValue('empty_cart')
+                              }
+                            )
+                          }
+                        })
+                        //]]>
+                      </script>
+                    <![endif]-->
                   </td>
                 </tr>
-              </tfoot >
+              </tfoot>
               <tbody  v-for="sepet in Seppet"
       :key="sepet.code"
       :sepet="sepet">
-                <tr >
+                <tr>
                   <td class="product-cart-image">
                     <a
                       href="https://www.saatvesaat.com.tr/akilli-saat/prgc505-01-akilli-saat"
@@ -179,23 +212,21 @@
                       maxlength="12"
                     />
 
-                    <button   
+                    <button   @click="adetGuncelle(sepet)"
                       type="submit"
                       name="update_cart_action"
                       data-cart-item-update=""
                       value="update_qty"
                       title="Güncelle"
                       class="button btn-update"
-                      @click="urunartibir(sepet)"
                     >
-                      <span><span>+1</span></span>
+                      <span><span>Güncelle</span></span>
                     </button>
-                    
 
                     <ul class="cart-links">
                       <li>
                         <a
-                          
+                          href="https://www.saatvesaat.com.tr/checkout/cart/configure/id/4316434/"
                           title="Edit item parameters"
                           >Düzenle</a
                         >
@@ -210,8 +241,8 @@
                     </span>
                   </td>
                   <td class="a-center product-cart-remove">
-                    <a @click="sepettenCikar(sepet)"
-                      href="/sepetim"
+                    <a
+                      href="https://www.saatvesaat.com.tr/checkout/cart/delete/id/4316434/"
                       title="Ürün sil"
                       class="btn-remove btn-remove-inline"
                       ><i class="ion-android-cancel"></i
@@ -329,18 +360,17 @@ import 'firebase/compat/auth'
 export default{
 
 data() {
-    return { Seppet : [],user:'',products: [],editadet:''
+    return { Seppet : [],user:'',products: []
      }
   },
 mounted() {
- 
   firebase.auth().onAuthStateChanged((user) => {
       console.log(user)
-      this.user = user
+      this.ser = user
     })
 
     fbDb
-      .ref('Sepet/'+this.user.uid)
+      .ref('Sepet/8Mt43rDDxdZHhN0ufZbxM8Z1rrb2')
       .get()
       .then((snapshot) => {
         if (snapshot.exists()) {
@@ -359,21 +389,23 @@ mounted() {
       })
 },
 methods:{
-  sepettenCikar(sepet){
-   const spt=this.Seppet
-   const productIndex=spt.findIndex(item =>item.code===sepet.code)
-    spt[productIndex].adet-=1
-    if(spt[productIndex].adet<1){
-    spt.splice(productIndex,1);}
-    fbDb.ref('Sepet/'+ this.user.uid).set(spt)
-  },
-  urunartibir(sepet){
-   const spt=this.Seppet
-   const productIndex=spt.findIndex(item =>item.code===sepet.code)
-    spt[productIndex].adet+=1
+  adetGuncelle(sepet){
+      for(const item of this.sepet)
+      {
+        if(item.id===sepet.id){
+          item.adet=item.adet+1;
+          break;
+        }
+      }
     
-    fbDb.ref('Sepet/'+ this.user.uid).set(spt)
   }
-}
+},
+toplamFiyat() {
+      let total = 0
+      this.sepet.forEach((element) => {
+        total += element.sepet.fiyat * element.adet
+      })
+      return total
+    },
 }
 </script>

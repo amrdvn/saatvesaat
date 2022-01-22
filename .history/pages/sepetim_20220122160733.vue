@@ -1,11 +1,9 @@
 <template>
-  <div class="main-container col1-layout" >
+  <div class="main-container col1-layout">
     <div class="main">
       <div class="col-main">
         <div></div>
-        <my v-for="product in products"
-      :key="product.code"
-      :product="product"></my>
+
         <div class="cart display-single-price">
           <div class="page-title title-buttons">
             <h1>Alışveriş Sepeti</h1>
@@ -118,11 +116,13 @@
 
                   </td>
                 </tr>
-              </tfoot >
+              </tfoot>
               <tbody  v-for="sepet in Seppet"
       :key="sepet.code"
       :sepet="sepet">
-                <tr >
+                <tr v-for="product in products"
+      :key="product.code"
+      :product="product">
                   <td class="product-cart-image">
                     <a
                       href="https://www.saatvesaat.com.tr/akilli-saat/prgc505-01-akilli-saat"
@@ -186,7 +186,7 @@
                       value="update_qty"
                       title="Güncelle"
                       class="button btn-update"
-                      @click="urunartibir(sepet)"
+                      @click="adetartibir(sepet)"
                     >
                       <span><span>+1</span></span>
                     </button>
@@ -210,8 +210,8 @@
                     </span>
                   </td>
                   <td class="a-center product-cart-remove">
-                    <a @click="sepettenCikar(sepet)"
-                      href="/sepetim"
+                    <a
+                      href="https://www.saatvesaat.com.tr/checkout/cart/delete/id/4316434/"
                       title="Ürün sil"
                       class="btn-remove btn-remove-inline"
                       ><i class="ion-android-cancel"></i
@@ -333,14 +333,13 @@ data() {
      }
   },
 mounted() {
- 
   firebase.auth().onAuthStateChanged((user) => {
       console.log(user)
-      this.user = user
+      this.ser = user
     })
 
     fbDb
-      .ref('Sepet/'+this.user.uid)
+      .ref('Sepet/8Mt43rDDxdZHhN0ufZbxM8Z1rrb2')
       .get()
       .then((snapshot) => {
         if (snapshot.exists()) {
@@ -359,20 +358,8 @@ mounted() {
       })
 },
 methods:{
-  sepettenCikar(sepet){
-   const spt=this.Seppet
-   const productIndex=spt.findIndex(item =>item.code===sepet.code)
-    spt[productIndex].adet-=1
-    if(spt[productIndex].adet<1){
-    spt.splice(productIndex,1);}
-    fbDb.ref('Sepet/'+ this.user.uid).set(spt)
-  },
-  urunartibir(sepet){
-   const spt=this.Seppet
-   const productIndex=spt.findIndex(item =>item.code===sepet.code)
-    spt[productIndex].adet+=1
-    
-    fbDb.ref('Sepet/'+ this.user.uid).set(spt)
+  sepettenCikar(product){
+
   }
 }
 }

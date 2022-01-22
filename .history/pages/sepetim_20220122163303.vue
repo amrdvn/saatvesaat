@@ -186,7 +186,7 @@
                       value="update_qty"
                       title="Güncelle"
                       class="button btn-update"
-                      @click="urunartibir(sepet)"
+                      @click="adetartibir(sepet)"
                     >
                       <span><span>+1</span></span>
                     </button>
@@ -336,11 +336,11 @@ mounted() {
  
   firebase.auth().onAuthStateChanged((user) => {
       console.log(user)
-      this.user = user
+      this.ser = user
     })
 
     fbDb
-      .ref('Sepet/'+this.user.uid)
+      .ref('Sepet/8Mt43rDDxdZHhN0ufZbxM8Z1rrb2')
       .get()
       .then((snapshot) => {
         if (snapshot.exists()) {
@@ -365,13 +365,6 @@ methods:{
     spt[productIndex].adet-=1
     if(spt[productIndex].adet<1){
     spt.splice(productIndex,1);}
-    fbDb.ref('Sepet/'+ this.user.uid).set(spt)
-  },
-  urunartibir(sepet){
-   const spt=this.Seppet
-   const productIndex=spt.findIndex(item =>item.code===sepet.code)
-    spt[productIndex].adet+=1
-    
     fbDb.ref('Sepet/'+ this.user.uid).set(spt)
   }
 }

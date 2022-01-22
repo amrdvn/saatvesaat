@@ -340,7 +340,7 @@ mounted() {
     })
 
     fbDb
-      .ref('Sepet/'+this.user.uid)
+      .ref('Sepet/')
       .get()
       .then((snapshot) => {
         if (snapshot.exists()) {

@@ -186,7 +186,7 @@
                       value="update_qty"
                       title="Güncelle"
                       class="button btn-update"
-                      @click="urunartibir(sepet)"
+                      @click="adetartibir(sepet)"
                     >
                       <span><span>+1</span></span>
                     </button>
@@ -340,7 +340,7 @@ mounted() {
     })
 
     fbDb
-      .ref('Sepet/'+this.user.uid)
+      .ref('Sepet/8Mt43rDDxdZHhN0ufZbxM8Z1rrb2')
       .get()
       .then((snapshot) => {
         if (snapshot.exists()) {
