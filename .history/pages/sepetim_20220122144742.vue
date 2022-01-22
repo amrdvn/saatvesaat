@@ -237,7 +237,7 @@
                   <!--Sub total starts here -->
                   <td class="product-cart-total" data-saat-label="Ara Toplam">
                     <span class="cart-price">
-                      <span class="price">{{sepet.fiyat}}&nbsp;TL</span>
+                      <span class="price">{{sepet.fi}}&nbsp;TL</span>
                     </span>
                   </td>
                   <td class="a-center product-cart-remove">
