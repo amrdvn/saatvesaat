@@ -1,0 +1,211 @@
+{
+    "musteri": [
+        {
+             "8Mt43rDDxdZHhN0ufZbxM8Z1rrb2":""]
+                     
+        }  
+              ],
+    "products": [
+        {
+            "id":1,
+            "code":"DZ1934",
+            "marka":"Diesel",
+            "ad":"DZ1934 Erkek Kol Saati",
+            "ozellikler":"Çelik / Quartz Teknoloji / 44 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Cam Özellik / 5 ATM Su Geçirmezlik",
+            "fiyat":"712.80",
+            "image_url":"https://cdn.saatvesaat.com.tr/media/catalog/product/d/z/dz1437_1_2.jpg",
+            "cinsiyet":"Bayan, Erkek"
+        },
+        {
+            "id":2,
+            "code":"DZ1819",
+            "marka":"Diesel",
+            "ad":"DZ1819 Kol Saati",
+            "ozellikler":"Silikon / Quartz Teknoloji / 45 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Cam Özellik / 10 ATM Su Geçirmezlik",
+            "fiyat":"712.80",
+            "image_url":"https://cdn.saatvesaat.com.tr/media/catalog/product/d/z/dz1819_1.jpg",
+            "cinsiyet":"Bayan, Erkek"
+        },
+        {
+            "id":3,
+            "code":"WRS406",
+            "marka":"Welder Moody Watch",
+            "ad":"WRS406 42 mm Slim Kol Saati",
+            "ozellikler":"Çelik / Quartz Teknoloji / 42 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Photochromic Cam Özellik / 3 ATM Su Geçirmezlik",
+            "fiyat":"1.930",
+            "image_url":"https://cdn.saatvesaat.com.tr/media/catalog/product/w/r/wrs406_1.jpg",
+            "cinsiyet":"Bayan, Erkek"
+        },
+        {
+            "id":4,
+            "code":"DZ4500",
+            "marka":"Diesel",
+            "ad":"DZ4500 Erkek Kol Saati",
+            "ozellikler":"Çelik / Quartz Teknoloji / 51 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Cam Özellik / 10 ATM Su Geçirmezlik",
+            "fiyat":"5.070",
+            "image_url":"https://cdn.saatvesaat.com.tr/media/catalog/product/d/z/dz4500_1_2.jpg",
+            "cinsiyet":"Erkek"
+        },
+        {
+            "id":5,
+            "code":"ML-AI6008SS001330-1",
+            "marka":"Maurice Lacroix",
+            "ad":"ML-AI6008SS001330-1 Erkek Kol Saati",
+            "ozellikler":"Çelik / Otomatik Teknoloji / 42 mm Kasa Çapı / Yuvarlak Kasa Şekli / Safir Cam Özellik / 20 ATM Su Geçirmezlik",
+            "fiyat":"30.260",
+            "image_url":"https://cdn.saatvesaat.com.tr/media/catalog/product/m/l/ml-ai6008ss001330-1_1.jpg",
+            "cinsiyet":"Erkek"
+        },
+        {
+            "id":6,
+            "code":"TH1791476",
+            "marka":"Tommy Hilfiger",
+            "ad":"TH1791476 Erkek Kol Saati",
+            "ozellikler":"Çelik / Quartz Teknoloji / 46 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Cam Özellik / 5 ATM Su Geçirmezlik",
+            "fiyat":"3.950",
+            "image_url":"https://cdn.saatvesaat.com.tr/media/catalog/product/t/h/th1791476_1.jpg",
+            "cinsiyet":"Erkek"
+        },
+        {
+            "id":7,
+            "code":"XOX-IL007",
+            "marka":"Xonix",
+            "ad":"XOX-IL007 Çocuk Kol Saati",
+            "ozellikler":"Quartz Teknoloji / 35 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Cam Özellik / 10 ATM Su Geçirmezlik",
+            "fiyat":"470",
+            "image_url":"https://cdn.saatvesaat.com.tr/media/catalog/product/x/o/xox-il007_1.jpg",
+            "cinsiyet":"Çocuk"
+        },
+        {
+            "id":8,
+            "code":"XOX-EC004",
+            "marka":"Xonix",
+            "ad":"XOX-EC004 Çocuk Kol Saati",
+            "ozellikler":"Quartz Teknoloji / 30 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Cam Özellik / 3 ATM Su Geçirmezlik",
+            "fiyat":"230",
+            "image_url":"https://cdn.saatvesaat.com.tr/media/catalog/product/x/o/xox-ec004_1.jpg",
+            "cinsiyet":"Çocuk"
+        },
+        {
+            "id":9,
+            "code":"XOX-KC005",
+            "marka":"Xonix",
+            "ad":"XOX-KC005 Çocuk Kol Saati",
+            "ozellikler":"Quartz Teknoloji / 30 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Cam Özellik / 3 ATM Su Geçirmezlik",
+            "fiyat":"230",
+            "image_url":"https://cdn.saatvesaat.com.tr/media/catalog/product/x/o/xox-kc005_1.jpg",
+            "cinsiyet":"Çocuk"
+        },
+        {
+            "id":10,
+            "code":"XOX-EC003",
+            "marka":"Xonix",
+            "ad":"XOX-EC003 Çocuk Kol Saati",
+            "ozellikler":"Quartz Teknoloji / 30 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Cam Özellik / 3 ATM Su Geçirmezlik",
+            "fiyat":"230",
+            "image_url":"https://cdn.saatvesaat.com.tr/media/catalog/product/x/o/xox-ec003_1.jpg",
+            "cinsiyet":"Çocuk"
+        },
+        {
+            "id":11,
+            "code":"XOX-HV007",
+            "marka":"Xonix",
+            "ad":"XOX-HV007 Çocuk Kol Saati",
+            "ozellikler":"Quartz Teknoloji / 42 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Cam Özellik / 10 ATM Su Geçirmezlik",
+            "fiyat":"620",
+            "image_url":"https://cdn.saatvesaat.com.tr/media/catalog/product/x/o/xox-hv007.jpg",
+            "cinsiyet":"Çocuk"
+        },
+        {
+            "id":12,
+            "code":"WRS406 42",
+            "marka":"Welder Moody Watch",
+            "ad":"WRS406 42 mm Slim Kol Saati",
+            "ozellikler":"Quartz Teknoloji / 42 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Cam Özellik / 10 ATM Su Geçirmezlik",
+            "fiyat":"1.930",
+            "image_url":"https://cdn.saatvesaat.com.tr/media/catalog/product/w/r/wrs406_1.jpg",
+            "cinsiyet":"Bayan, Erkek"
+        },
+        {
+            "id":13,
+            "code":"FFS5459",
+            "marka":"Fossil",
+            "ad":"FFS5459 Erkek Kol Saati",
+            "ozellikler":"Quartz Teknoloji / 42 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Cam Özellik / 10 ATM Su Geçirmezlik",
+            "fiyat":"2.890",
+            "image_url":"https://cdn.saatvesaat.com.tr/media/catalog/product/f/f/ffs5459_1.jpg",
+            "cinsiyet":"Erkek"
+        },
+        {
+            "id":14,
+            "code":"ML-AI6008SS001330-1",
+            "marka":"Maurice Lacroix",
+            "ad":"ML-AI6008SS001330-1 Erkek Kol Saati",
+            "ozellikler":"Quartz Teknoloji / 42 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Cam Özellik / 10 ATM Su Geçirmezlik",
+            "fiyat":"30.260",
+            "image_url":"https://cdn.saatvesaat.com.tr/media/catalog/product/m/l/ml-ai6008ss001330-1_1.jpg",
+            "cinsiyet":"Erkek"
+        },
+        {
+            "id":15,
+            "code":"SKW6078",
+            "marka":"Skagen",
+            "ad":"SKW6078 Erkek Kol Saati",
+            "ozellikler":"Quartz Teknoloji / 42 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Cam Özellik / 10 ATM Su Geçirmezlik",
+            "fiyat":"3.950",
+            "image_url":"https://cdn.saatvesaat.com.tr/media/catalog/product/s/k/skw6078_1_2.jpg",
+            "cinsiyet":"Erkek"
+        },
+        {
+            "id":16,
+            "code":"FFS5308",
+            "marka":"Fossil",
+            "ad":"FFS5308 Erkek Kol Saati",
+            "ozellikler":"Quartz Teknoloji / 42 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Cam Özellik / 10 ATM Su Geçirmezlik",
+            "fiyat":"1024.80",
+            "image_url":"https://cdn.saatvesaat.com.tr/media/catalog/product/f/f/ffs5308_1.jpg",
+            "cinsiyet":"Erkek"
+        },
+        {
+            "id":17,
+            "code":"PRG2003-02",
+            "marka":"Parigi",
+            "ad":"PRG2003-02 Erkek Kol Saati",
+            "ozellikler":"Quartz Teknoloji / 42 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Cam Özellik / 10 ATM Su Geçirmezlik",
+            "fiyat":"573.30",
+            "image_url":"https://cdn.saatvesaat.com.tr/media/catalog/product/p/r/prg2003-02_1.jpg",
+            "cinsiyet":"Bayan"
+        },
+        {
+            "id":18,
+            "code":"AR2500",
+            "marka":"Emporio Armani",
+            "ad":"AR2500 Erkek Kol Saati",
+            "ozellikler":"Quartz Teknoloji / 42 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Cam Özellik / 10 ATM Su Geçirmezlik",
+            "fiyat":"1.680",
+            "image_url":"https://cdn.saatvesaat.com.tr/media/catalog/product/a/r/ar2500_1_2.jpg",
+            "cinsiyet":"Bayan"
+        },
+        {
+            "id":19,
+            "code":"PRG2002-04",
+            "marka":"Parigi",
+            "ad":"PRG2002-04 Erkek Kol Saati",
+            "ozellikler":"Quartz Teknoloji / 42 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Cam Özellik / 10 ATM Su Geçirmezlik",
+            "fiyat":"378.30",
+            "image_url":"https://cdn.saatvesaat.com.tr/media/catalog/product/p/r/prg2002-04_1.jpg",
+            "cinsiyet":"Bayan"
+        },
+        {
+            "id":20,
+            "code":"AR11135",
+            "marka":"Emporio Armani",
+            "ad":"AR11135 Erkek Kol Saati",
+            "ozellikler":"Quartz Teknoloji / 42 mm Kasa Çapı / Yuvarlak Kasa Şekli / Mineral Cam Özellik / 10 ATM Su Geçirmezlik",
+            "fiyat":"1688.40",
+            "image_url":"https://cdn.saatvesaat.com.tr/media/catalog/product/a/r/ar11135_1.jpg",
+            "cinsiyet":"Bayan"
+        }
+    ]
+    
+}
