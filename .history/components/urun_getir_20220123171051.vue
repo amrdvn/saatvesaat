@@ -29,7 +29,7 @@
         class="product-image"
       >
         <span data-pid="56675" class="link-wishlist addToWishlist"></span>
-        <img 
+        <img @click=""
           class="lazy-loaded"
           id="product-collection-image-56675"
           :src="product.image_url"
@@ -108,7 +108,14 @@ export default {
   },
 
   methods: {
-   
+    linkGonder(product){
+      this.$router.push({
+        name:'saat-id',
+        params:{
+          id:this.product.id
+      }
+      })
+    },
     sepeteEkle(product) {
       
       let exists=false;

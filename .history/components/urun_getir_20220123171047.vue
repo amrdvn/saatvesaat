@@ -108,7 +108,14 @@ export default {
   },
 
   methods: {
-   
+    linkGonder(product){
+      this.$router.push({
+        name:'saat-id',
+        params:{
+          id:this.product.id
+      }
+      })
+    },
     sepeteEkle(product) {
       
       let exists=false;

@@ -29,7 +29,7 @@
         class="product-image"
       >
         <span data-pid="56675" class="link-wishlist addToWishlist"></span>
-        <img 
+        <img @click="linkGonder(product)"
           class="lazy-loaded"
           id="product-collection-image-56675"
           :src="product.image_url"
