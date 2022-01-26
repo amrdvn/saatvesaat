@@ -156,7 +156,7 @@ export default {
            }).catch(error=>{
                alert("Hata :"+error) 
                this.errors=error;
-               this.$router.push('/signup')
+               this.$router.push('/login')
            })
         }
     },

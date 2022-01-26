@@ -1,1 +1,0 @@
-const realDb = getDatabase(app);

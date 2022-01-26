@@ -150,13 +150,11 @@ export default {
         pressed(){
            firebase.auth().createUserWithEmailAndPassword(this.email,this.password).then(user=>{
                console.log(user);
-               alert("Kayıt başarılı..") 
-               this.$router.push('/hesabim')
                
            }).catch(error=>{
-               alert("Hata :"+error) 
+               alert("Hata hata") 
                this.errors=error;
-               this.$router.push('/signup')
+               this.$router.push('/login')
            })
         }
     },
