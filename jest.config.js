@@ -18,6 +18,5 @@ module.exports = {
     '<rootDir>/components/**/*.vue',
     '<rootDir>/pages/**/*.vue'
   ],
-  testEnvironment: 'jsdom',
-  preset: '@vue/cli-plugin-unit-jest/presets/no-babel'
+  testEnvironment: 'jsdom'
 }
